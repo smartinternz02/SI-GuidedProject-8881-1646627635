@@ -1,0 +1,156 @@
+
+<form action="/Prediction" method="[POST,GET]">
+<head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.about-section{
+    background: url('static/bg3.webp'); no-repeat left;
+    background-size: 100%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    height: 100%;
+    padding: 100px 0;
+   
+}
+.r{
+background-color:linear-gradient(pink,yellow); 
+opacity :0.75;
+color:rgb(25, 25, 112);
+}
+.inner-container{
+   display:flex;
+   height:88%;
+   align-items:center;
+   color:rgb(48, 25, 52);
+    margin-left:15px;
+}
+.col{
+flex-basis:50%;
+
+}
+.inner-container h1{
+    font-size: 35px;
+  color:#301934;
+}
+
+.text1{
+    font-size: 15px;
+    color: #900C3F;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+.text{
+    font-size: 15px;
+    color: #ffffbf;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+.inner-container input[type="submit"]
+  {
+     width:250px;
+     color:#000;
+     font-size:20px;
+     padding:12px 0;
+      background: #301934;
+      border:0;
+      border-radius:20px;
+      outline:none;
+      margin: 0 auto;
+      margin-top:10px;
+      margin-left:125px;
+      color:white;
+  }
+  .inner-container input[type="submit"]:hover
+  {
+      background:#1B1212;
+  }
+ .card{
+  width:230px;
+  height:255px;
+  display:inline-block;
+  border-radius:10px;
+  padding:15px 25px;
+  border-color:black;
+  border-style:solid;
+  box-sizing:border-box;
+  cursor:pointer;
+  transition : transform 0.5s;
+  margin:10px 15px;
+  background-color:  linear-gradient(blue,yellow);
+  background-position:center;
+  background-size:cover;
+  }
+  .card:hover{
+  transform:translateY(-10px);
+ box-shadow: 10px 10px rgba(255,0,0, 0.2) ;
+  }
+  h3{
+  color:#DAF7A6;
+  font-size:20px;
+  font-weigh:bolder;
+  }
+  h5{
+  color:#C70039;
+  font-weight:bolder;
+ 
+  }
+</style>
+</head>
+    
+<div class="about-section">
+
+<div class="inner-container">
+<div class="col">
+<div class="r">
+        <strong><h1>CONCRETE STRENGTH PREDICTION</h1></strong> <br>
+        <p class="text1">
+        Concrete has several advantages, including good compressive strength, durability, workability, construction availability, and low cost. Determining accurate concrete strength is a major civil engineering problem. The traditional way to know the strength of concrete will take about 28 days which is very time-consuming. It is important to wait 28 days to ensure the quality control of the process, although it is very time-consuming. 
+              To build a Machine Learning model to predict the compressive strength of concrete to greatly speed up prediction with higher accuracy.
+            </p>
+          <input  type="submit" value="Prediction">
+          </div>
+ </div>
+ <div class="col">
+ <h3><b>Major Attributes Required For Concrete Strength Prediction</b></h3><br>
+ <div class="card">
+ <h5>Blast Furnace Slag</h5>
+ <p class="text">
+      Blast furnace slag cement is the mixture of ordinary portland cement and fine granulated blast furnace slag obtained as a by product in the manufacture of steel with percent under 70% to that of cement. 
+            </p>
+ </div>
+ <div class="card">
+ <h5>Coarse & Fine Aggregate</h5>
+ <p class="text">
+          Fine aggregate are small size filler material in construction.coarse aggregates are larger size filler materials in construction.fine is of superior quality while coarse is composed of large parts.
+            </p>
+ </div>
+ <div class="card">
+ <h5>Fly ash</h5>
+ <p class="text">
+        Fly ash, flue ash, coal ash, or pulverised fuel ash is a fine gray powder consisting mostly of spherical, glassy particle that are produced as a byproduct in coal-fired power station.It is commonly known as a supplementary cementitious material.
+            </p>
+ </div>
+ <div class="card">
+ <h5>Superplasticizer</h5>
+ <p class="text">
+           Superplasticizers also known as high range water reducers,are additives used in making high strength concrete.Plasticizer is a chemical compound that enable the production of concrete with approximately 15% less water content.
+
+            </p>
+ </div>
+</div>
+
+
+</form>
